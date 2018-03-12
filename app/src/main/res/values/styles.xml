@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ResultButtons" parent="Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="ResultButtons.Red">
+        <item name="android:background">@drawable/rounded_button_red</item>
+    </style>
+
+    <style name="ResultButtons.Blue">
+        <item name="android:background">@drawable/rounded_button_blue</item>
+    </style>
+
+</resources>

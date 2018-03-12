@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nemanja.points.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <LinearLayout
+            android:id="@+id/setsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/clear"
+            android:layout_toStartOf="@+id/centralHorizontalMarker"
+            android:layout_toLeftOf="@+id/centralHorizontalMarker">
+            <!-- Set 1 -->
+            <LinearLayout
+                android:id="@+id/setOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/setOneRed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textSize="38sp"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="38sp"/>
+
+                <TextView
+                    android:id="@+id/setOneBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textSize="38sp" />
+            </LinearLayout>
+
+            <!-- Set2 -->
+            <LinearLayout
+                android:id="@+id/setTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/setTwoRed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textSize="38sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="38sp"/>
+
+                <TextView
+                    android:id="@+id/setTwoBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textSize="38sp"/>
+            </LinearLayout>
+
+            <!-- Set 3 -->
+            <LinearLayout
+                android:id="@+id/setThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/setThreeRed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textSize="38sp"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="38sp" />
+
+                <TextView
+                    android:id="@+id/setThreeBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textSize="38sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/addSubtract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="+"
+                    android:textSize="38sp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="12dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/centralHorizontalMarker"
+            android:layout_centerInParent="true"
+            android:layout_width="8dp"
+            android:layout_height="match_parent"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_above="@+id/clear"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/centralHorizontalMarker"
+            android:layout_toRightOf="@+id/centralHorizontalMarker">
+
+            <Button
+                android:id="@+id/redPlayerAct"
+                style="@style/ResultButtons.Red"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Player One"
+                android:layout_gravity="start"
+                android:layout_weight="0"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/nextSet"
+                style="@style/ResultButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:text="Next\nset"
+                android:layout_gravity="start|bottom"
+                android:layout_weight="0"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/bluePlayerAct"
+                style="@style/ResultButtons.Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Player Two"
+                android:layout_gravity="end"
+                android:layout_weight="0"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/clear"
+            style="@style/ResultButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear selected set"
+            android:textColor="@color/teamRed"
+            android:layout_toStartOf="@+id/centralHorizontalMarker"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/centralHorizontalMarker"
+            android:layout_alignParentLeft="true" />
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

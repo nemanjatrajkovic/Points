@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/maringPaddingMedium"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+            <TextView
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/maringPaddingMedium"
+                android:gravity="center_vertical"
+                android:text="Set Player names"
+                android:textColor="@color/white"
+                android:paddingLeft="4dp" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/redInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Red Player Name">
+
+            <EditText
+                android:id="@+id/redPlayerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Red Player"
+                android:selectAllOnFocus="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/blueInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Blue Player Name">
+
+            <EditText
+                android:id="@+id/bluePlayerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blue Player"
+                android:selectAllOnFocus="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:id="@+id/centerHorizon"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <Button
+                android:id="@+id/done"
+                android:background="@color/violet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="4dp"
+                android:text="Done"
+                android:textColor="@color/white" />
+
+            <!--<View-->
+                <!--android:layout_width="8dp"-->
+                <!--android:layout_height="4dp"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/cancel"-->
+                <!--android:background="@color/white"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Cancel" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
